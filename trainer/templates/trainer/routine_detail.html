@@ -5,6 +5,11 @@
         <title>Exercises</title>
     </head>
     <body>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Add" />
+        </form>
         <ul>
             {% for exercise in exercises %}
                 <li>{{ exercise.name }}</li>

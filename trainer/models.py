@@ -9,4 +9,4 @@ class Routine(models.Model):
 
 class Exercise(models.Model):
     routine = models.ForeignKey(Routine, on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=50)
